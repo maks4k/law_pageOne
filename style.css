@@ -63,7 +63,7 @@ body {
   background-color: var(--bg-dark);
 }
 .container {
-  border: 1px solid red;
+ 
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
