@@ -111,12 +111,15 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  list-style: none;
 }
 .nav__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  list-style: none;
+
 }
 .nav__promo_list {
   font-family: var(--font-inter-tight);
@@ -279,6 +282,7 @@ header {
   position: relative;
 }
 .image__index {
+  border-radius: 10px;
   z-index: 123124;
 }
 .services__img_hand::before {
@@ -644,9 +648,7 @@ letter-spacing: -0.6px;
   justify-content: center;
   align-items: center;
  }
- .anyQstions{
-
- }
+/* Contacts */
 .contact__header{
   display: flex;
   align-items: center;
@@ -849,4 +851,3 @@ opacity: 0.5;
 .footer-bottom-right a:hover {
   text-decoration: underline;
 }
-/* ////@media (max-width: 480px) */
