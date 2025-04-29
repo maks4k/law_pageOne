@@ -19,6 +19,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: n;
+}
 
 :root {
   /* Font families */
@@ -67,12 +70,16 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+ 
+}
+a{
+  text-decoration: none;
 }
 header {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header_logo {
   display: flex;
@@ -161,6 +168,8 @@ header {
   display: flex;
   justify-content: center; /* центрируем по горизонтали */
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .content__industries {
   margin-top: 130px;
@@ -208,6 +217,8 @@ header {
   gap: 19px;
   justify-content: center;
   margin-top: 196px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .service-item {
   position: relative;
@@ -305,6 +316,8 @@ header {
 Promo */
 .promo {
   margin-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .promo__head {
   display: flex;
@@ -422,6 +435,8 @@ Promo */
 /* Our Cases - блок "Our Case" с примерами/кейcами. */
 .our__case {
   margin-top: 181px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our__case_header {
   display: flex;
@@ -447,7 +462,7 @@ Promo */
   letter-spacing: -3.5px;
 }
 
-.our__case_swiper {
+ййй {
   display: flex;
   gap: 20px; /* Расстояние между кругами */
 }
@@ -650,6 +665,8 @@ letter-spacing: -0.6px;
  }
 /* Contacts */
 .contact__header{
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
   margin-top: 200px;
@@ -731,11 +748,15 @@ textarea:focus {
 }
 /* ///Footer */
 footer{
+  width: 100%;
   background-color: var(--color-light-purple-bg);
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
+  padding: 40px 0; /* Убираем горизонтальные паддинги */
+  font-family: var(--font-inter-tight);
   color: #333;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
+  box-sizing: border-box;
+
+  
 }
 .logo_footer{
   width: 56.588px;
@@ -770,15 +791,15 @@ opacity: 0.5;
 .footer-top {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: row;
 }
 
 .footer-column {
- display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 200px; /* Ширина колонки */
 }
 
 .footer__heading {
@@ -808,6 +829,7 @@ opacity: 0.5;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-top: 1px solid #999;
   padding-top: 20px;
   font-size: 12px;
@@ -850,4 +872,10 @@ opacity: 0.5;
 
 .footer-bottom-right a:hover {
   text-decoration: underline;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box
 }

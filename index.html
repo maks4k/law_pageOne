@@ -16,8 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="css/responsiveCss/indexResponsive.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <div class="container">
@@ -29,12 +30,12 @@
         <nav class="nav">
           <ul class="nav__list">
             <ul class="nav__promo">
-              <li class="nav__promo_list">services</li>
-              <li class="nav__promo_list active">industries</li>
+              <a href=""><li class="nav__promo_list">services</li></a>
+              <a href=""><li class="nav__promo_list active">industries</li></a>
             </ul>
             <ul class="nav__info">
-              <li class="nav__promo_list">about</li>
-              <li class="nav__promo_list">contact</li>
+              <a href="about.html"><li class="nav__promo_list">about</li></a>
+              <a href="`"><li class="nav__promo_list">contact</li></a>
             </ul>
           </ul>
         </nav>
@@ -255,7 +256,8 @@
             <div class="card card_active">
               <div class="content_card_one">
                 <h3 class="card__header">International Business Setup</h3>
-                <svg class="media__svg"
+                <svg
+                  class="media__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="10"
@@ -287,7 +289,8 @@
             <div class="card">
               <div class="content_card_one">
                 <h3 class="card__headers">Property Ownership Dispute</h3>
-                <svg class="media__svg"
+                <svg
+                  class="media__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="10"
@@ -318,7 +321,8 @@
             <div class="card">
               <div class="content_card_one">
                 <h3 class="card__headers">Economic Crime Defense</h3>
-                <svg class="media__svg"
+                <svg
+                  class="media__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="10"
@@ -349,7 +353,8 @@
             <div class="card">
               <div class="content_card_one">
                 <h3 class="card__headers">Divorce & Custody Case</h3>
-                <svg class="media__svg"
+                <svg
+                  class="media__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="10"
@@ -407,76 +412,101 @@
         </div>
       </section>
       <footer>
-        <div class="footer-top">
-          <div class="footer-column">
-            <div class="footer__logo">
-              <img
-                class="logo_footer"
-                src="img/footer/piramidaFooter.png"
-                alt="PGS Association Logo"
-                class="footer-logo"
-              />
-              <h2 class="header__logo">PGS ASSOCIATION</h2>
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-column">
+              <div class="footer__logo">
+                <img
+                  class="logo_footer"
+                  src="img/footer/piramidaFooter.png"
+                  alt="PGS Association Logo"
+                  class="footer-logo"
+                />
+                <h2 class="header__logo">PGS ASSOCIATION</h2>
+              </div>
+              <p class="footer__logo_text">
+                We are known for our client-first approach, transparent
+                communication
+              </p>
             </div>
-            <p class="footer__logo_text">
-              We are known for our client-first approach, transparent
-              communication
-            </p>
-          </div>
 
-          <div class="footer-column">
-            <h4 class="footer__heading">Contact</h4>
-            <p class="footer__text">
-              1 Infinite Loop, Cupertino, CA 95014, USA
-            </p>
-            <p class="footer__text">+94 893 831 902</p>
-            <p class="footer__text">PGS@Association.io</p>
-          </div>
+            <div class="footer-column">
+              <h4 class="footer__heading">Contact</h4>
+              <p class="footer__text">
+                1 Infinite Loop, Cupertino, CA 95014, USA
+              </p>
+              <p class="footer__text">+94 893 831 902</p>
+              <p class="footer__text">PGS@Association.io</p>
+            </div>
 
-          <div class="footer-column">
-            <h4 class="footer__heading">Navigation</h4>
-            <p class="footer__text">Services</p>
-            <p class="footer__text">Industries</p>
-          </div>
+            <div class="footer-column">
+              <h4 class="footer__heading">Navigation</h4>
+              <p class="footer__text">Services</p>
+              <p class="footer__text">Industries</p>
+            </div>
 
-          <div class="footer-column">
-            <h4 class="footer__heading">Company</h4>
-            <p class="footer__text">About</p>
-            <p class="footer__text">Contact</p>
-          </div>
+            <div class="footer-column">
+              <h4 class="footer__heading">Company</h4>
+              <p class="footer__text">About</p>
+              <p class="footer__text">Contact</p>
+            </div>
 
-          <div class="footer-column">
-            <h4 class="footer__heading">Working hours</h4>
-            <p class="footer__text">Monday – Friday</p>
-            <p class="footer__text">9:00 AM – 6:00 PM (EST)</p>
+            <div class="footer-column">
+              <h4 class="footer__heading">Working hours</h4>
+              <p class="footer__text">Monday – Friday</p>
+              <p class="footer__text">9:00 AM – 6:00 PM (EST)</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-left">
+              <p class="footer__boottom_group">© 2025 PGS Firm Law Group.</p>
+              <p class="footer__boottom_accpect">All rights reserved</p>
+            </div>
+            <div class="footer-bottom-center">
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/facebookIcon.svg"
+                  alt="facebookIcon"
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/xIcon.svg"
+                  alt="xIcon"
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/InstagrammIcon.svg"
+                  alt="instaIcon"
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/socialIcoon.svg"
+                  alt="inIcon"
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/GoogleIcon.svg"
+                  alt="googleIcon"
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__icon"
+                  src="img/footer/youtubeIcon.svg"
+                  alt="youtubeIcon"
+              /></a>
+            </div>
+            <div class="footer-bottom-right">
+              <a class="footer__boottom_group" href="#">Cookie Settings</a>
+              <a class="footer__boottom_group" href="#">Terms of Service</a>
+              <a class="footer__boottom_group" href="#">Privacy Policy</a>
+            </div>
           </div>
         </div>
-        <!-- //// -->
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p class="footer__boottom_group">© 2025 PGS Firm Law Group. <p class="footer__boottom_accpect">All rights reserved</p></p>
-          </div>
-          <div class="footer-bottom-center">
-            <a href=""><img class="footer__icon" src="img/footer/facebookIcon.svg" alt="facebookIcon" /></a>
-            <a href=""><img class="footer__icon" src="img/footer/xIcon.svg" alt="xIcon" /></a>
-            <a href=""><img class="footer__icon" src="img/footer/InstagrammIcon.svg" alt="instaIcon" /></a>
-            <a href=""><img class="footer__icon" src="img/footer/socialIcoon.svg" alt="inIcon"/></a>
-            <a href=""><img class="footer__icon" src="img/footer/GoogleIcon.svg" alt="googleIcon" /></a>
-            <a href=""><img class="footer__icon" src="img/footer/youtubeIcon.svg" alt="youtubeIcon" /></a>
-          </div>
-          <div class="footer-bottom-right">
-            <a class="footer__boottom_group" href="#">Cookie Settings</a>
-            <a class="footer__boottom_group" href="#">Terms of Service</a>
-            <a class="footer__boottom_group" href="#">Privacy Policy</a>
-          </div>
-        </div>
-        <!-- <div class="footer__logo">
-          <img src="img/footer/piramidaFooter.png" alt="piramida">
-          <h2>PGS ASSOCIATION</h2>
-        </div>
-        <div>
-          <p>PGS ASSOCIATION</p>
-        </div> -->
       </footer>
     </div>
   </body>

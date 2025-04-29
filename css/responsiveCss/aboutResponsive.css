@@ -1,0 +1,602 @@
+@media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .header__heading {
+      font-size: 18px; /* уменьшенный размер шрифта */
+      letter-spacing: -0.8px;
+    }
+  
+    .nav {
+      width: 100%;
+    }
+  
+    .nav__list {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-start;
+    }
+  
+    .nav__promo_list {
+      font-size: 16px; /* уменьшенный размер шрифта */
+      padding: 8px 12px;
+      opacity: 0.7;
+    }
+    .nav__promo_list:hover,
+    .nav__promo_list.active {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 375px) {
+    .hero__header {
+      padding: 0 16px;
+    }
+  
+    .hero_heading {
+      font-size: 48px; /* или var(--fs-48) */
+      letter-spacing: -2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: 150px;
+    }
+  
+    .cards-row {
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px 16px;
+    }
+  
+    .cards-grid {
+      grid-template-columns: 1fr; /* одна колонка */
+      grid-template-rows: none;
+      gap: 16px;
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+      height: auto;
+      padding: 20px 16px;
+    }
+  
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .card_left_two_text,
+    .card_right_one_text {
+      width: 100%;
+      font-size: 14px;
+      letter-spacing: -0.4px;
+      margin-top: 20px;
+      text-align: left;
+    }
+  
+    .card_right_one_text {
+      text-align: right;
+    }
+  
+    .card_left_one::after,
+    .card_left_one::before,
+    .card_left_fo::after,
+    .card_left_fo::before,
+    .card_left_two::after,
+    .card_right_two::after,
+    .card_right_two::before,
+    .card_right_three::after,
+    .card_right_three::before,
+    .card_right_fo::after {
+      width: 4px;
+      height: 4px;
+    }
+  
+    .card_left_fo_svg,
+    .card_right_three_svg {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card_right_two_img {
+      position: static;
+      transform: none;
+      width: 40%;
+      height: auto;
+    }
+  
+    .card_right_two {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  @media (max-width: 375px) {
+    .mission_values {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 50px;
+    }
+  
+    .header_mission_values {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .header_mission_values_center_header,
+    .our_values_promo_heading,
+    .history_content_text {
+      font-size: 32px;
+      letter-spacing: -1.2px;
+    }
+  
+    .header_mission_values_center_containerOne,
+    .header_mission_values_center_containerTwo {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .header_mission_values_center_text,
+    .header_mission_values_center_text_two,
+    .our_values_promo_text,
+    .our_values_text > p {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .mission__circle {
+      width: 100%;
+      height: auto;
+      max-width: 280px;
+    }
+  
+    .our_values {
+      flex-direction: column;
+      margin-top: 60px;
+      gap: 20px;
+    }
+  
+    .our_values_info {
+      align-items: flex-start;
+    }
+  
+    .our_values_text {
+      gap: 20px;
+    }
+  
+    .our_values_text > p {
+      font-size: 14px;
+    }
+  
+    .our_values_ethos {
+      margin-top: 20px;
+    }
+  
+    .ethos__text,
+    .legasy_text {
+      font-size: 14px;
+    }
+  
+    .history {
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 60px;
+    }
+  
+    .history_main {
+      gap: 20px;
+    }
+  
+    .histori_image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Удаляем SVG через display: none */
+    svg {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .team__content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main__image,
+    .card {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+  
+    .description_text,
+    .description_textTwo {
+      width: 100%;
+      font-size: 14px;
+      letter-spacing: -0.4px;
+    }
+  
+    .team_grid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .teamCard_five,
+    .teamCard_five_svg,
+    .circle_man,
+    .team_card_two_discription svg,
+    .teamCard_six_disc_rout_svg {
+      display: none !important;
+    }
+  
+    .strelka_man,
+    .team_card_two_discription img,
+    .teamCard_six_disc_rout_img {
+      position: static;
+      margin-right: 5px;
+    }
+  
+    .description_man,
+    .team_card_two_disc,
+    .teamCard_six_disc {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+  
+    .rout_man,
+    .team_card_two_discription,
+    .teamCard_six_disc_rout {
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+    }
+  
+    .name_man,
+    .name_manTwo p,
+    .teamCard_six_disc_name p {
+      font-size: 16px;
+    }
+  
+    .locathion_man,
+    .teamCard_six_disc_text {
+      font-size: 14px;
+    }
+    svg {
+        display: none !important;
+      }
+  }
+  @media screen and (max-width: 375px) {
+    .opnion {
+      height: auto;
+      padding: 20px 10px;
+    }
+  
+    .opnion_heading {
+      font-size: 36px;
+      letter-spacing: -2px;
+      margin-top: 50px;
+    }
+  
+    .opnion_heading_feature {
+      font-size: 36px;
+      letter-spacing: -2px;
+    }
+  
+    .opinions-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: static;
+      align-items: center;
+    }
+  
+    .card_opnioin {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      padding: 15px;
+      border: 1px solid var(--border-color);
+    }
+  
+    .card-1_header_text,
+    .card-3_header_text {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .card-1_footer_heading,
+    .card-3_footer-heading {
+      font-size: 20px;
+    }
+  
+    .card-1_footer_text,
+    .card-3_footer_text {
+      font-size: 12px;
+    }
+  
+    .card-2 {
+      display: none !important;
+    }
+  
+    .card-1,
+    .card-3,
+    .card-4 {
+      position: static !important;
+      padding: 10px;
+    }
+  
+    .card-1_header,
+    .card-1_footer {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 375px) {
+    .our_parthner {
+      height: auto;
+      padding: 24px 0 16px 0;
+    }
+    .our_parthner_heading,
+    .our_parthner_heading_feature {
+      font-size: 32px;
+      letter-spacing: -1.5px;
+      text-align: center;
+      line-height: 1.1;
+    }
+    .our_parthner_container {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-top: 10px;
+    }
+    .our_parthner_block {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* Уменьшаем размеры svg */
+    .our_parthner_block svg {
+      width: 80px !important;
+      height: auto !important;
+      max-width: 90vw;
+    }
+    /* Microsoft блоки */
+    .our_parthner_block-4 {
+      min-width: unset;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: static;
+      margin-top: 0;
+    }
+    .microsoft_block-1,
+    .microsoft_block-2,
+    .microsoft_block-3,
+    .microsoft_block-4 {
+      position: static;
+      width: 28px !important;
+      height: 28px !important;
+      margin: 2px 2px 2px 0;
+    }
+    .microsoft_block-5 {
+      width: 120px !important;
+      height: auto !important;
+      margin-left: 0;
+      margin-top: 4px;
+    }
+    .statistic {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      .grid-container-statiscs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 блока в ряд на маленьком экране */
+        grid-template-rows: repeat(4, auto); /* 4 ряда */
+        max-width: 100%; /* Занимает всю ширину экрана */
+        gap: 10px;
+        padding: 0;
+      }
+      
+      .statistics {
+        width: 100%;
+        height: auto; /* Автоматическая высота */
+        min-height: 200px; /* Минимальная высота блока */
+        background-color: #312840;
+        border: 1px solid #98939F; /* Уменьшаем толщину рамки */
+        box-sizing: border-box;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Контент вертикально */
+        padding: 10px; /* Отступы внутри блоков */
+      }
+      
+      .blockOne {
+        position: relative;
+      }
+      
+      .blockOne::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      
+      .blockOne_heading {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 48px; /* Меньше заголовок */
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.2; /* Межстрочный интервал */
+        letter-spacing: -2.4px;
+      }
+      
+      .blockOne_text {
+        color: #eee;
+        font-family: "Inter Tight";
+        font-size: 14px; /* Меньше текст */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3; /* Межстрочный интервал */
+        letter-spacing: -0.4px;
+        width: auto; /* Автоматическая ширина */
+        opacity: 0.7;
+      }
+      
+      .blockTwo {
+        border-top: none;
+      }
+      
+      .blockThree {
+        position: relative;
+      }
+      
+      .blockThree img {
+        max-width: 70%; /* Максимальная ширина изображения */
+        height: auto;
+      }
+      
+      .blockThree_svg {
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        width: 4px;
+        height: 4px;
+      }
+      
+      .blockFour {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .blockFour_svg {
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        width: 4px;
+        height: 4px;
+      }
+      
+      .blockFour_heading {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -2.4px;
+      }
+      
+      .blockFour_text {
+        color: #eee;
+        font-family: "Inter Tight";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: -0.4px;
+        opacity: 0.7;
+      }
+      
+      .blockFive {
+        border-left: none;
+        border-bottom: none;
+      }
+      
+      .blockSix {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+      }
+      
+      .blockSix_svg {
+        display: none; /* remove svg */
+      }
+      
+      .blockSix_heading {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -2.4px;
+      }
+      
+      .blockSix_text {
+        color: #eee;
+        font-family: "Inter Tight";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: -0.4px;
+        opacity: 0.7;
+        width: auto;
+      }
+      
+      .blockSeven {
+        display: flex;
+        flex-direction: column;
+        border-right: none;
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+      }
+      
+      .blockSeven_heading {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -2.4px;
+        text-align: center;
+      }
+      
+      .blockSeven_text {
+        width: auto;
+        color: #eee;
+        font-family: "Inter Tight";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: -0.4px;
+        opacity: 0.7;
+        text-align: center;
+      }
+      
+      .blockEight {
+        border-left: none;
+      }
+      
+      .blockEight img {
+        max-width: 70%;
+        height: auto;
+      }
+  }
