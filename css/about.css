@@ -226,6 +226,7 @@ header {
 .card_left_fo {
   border: 1px solid var(--border-color);
   position: relative;
+  overflow: hidden;
 }
 .card_left_fo::after{
     content: "";
@@ -253,6 +254,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 .card_right_two {
   border: 1px solid var(--border-color);
