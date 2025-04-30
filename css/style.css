@@ -462,8 +462,10 @@ Promo */
   letter-spacing: -3.5px;
 }
 
-ййй {
+.our__case_swiper {
+  z-index: 123;
   display: flex;
+  width: 210px;
   gap: 20px; /* Расстояние между кругами */
 }
 .circle {
