@@ -1433,6 +1433,7 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: -0.54px;
 opacity: 0.5;
+width: 363px;
 }
 .footer-top {
   display: flex;
@@ -1440,6 +1441,7 @@ opacity: 0.5;
   align-items: flex-start;
   width: 100%;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .footer-column {
@@ -1468,6 +1470,7 @@ opacity: 0.5;
   line-height: normal;
   letter-spacing: -0.54px;
   opacity: 0.5;
+  width: 202px;
 }
 
 
