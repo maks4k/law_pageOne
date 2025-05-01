@@ -760,6 +760,7 @@ margin-left: 40px;
   grid-template-columns: repeat(3, 372px);
   grid-template-rows: repeat(2, 391px);
   gap: 19px;
+  margin-left: 3px;
 }
 .card {
   width: 372px;
@@ -1337,6 +1338,17 @@ text-align: left;
   flex-direction: column;
   justify-content: center;
   border-right: none;
+  position: relative;
+ }
+ .blockSeven_svgOne{
+  position: absolute;
+  top: -3px;
+  left:-4px;
+ }
+ .blockSeven_svgTwo{
+  position: absolute;
+  bottom: -3px;
+  left: -4px;
  }
  .blockSeven_heading{
   color: #FFF;
@@ -1360,10 +1372,11 @@ opacity: 0.7;
 text-align: left;
  }
 .blockEight { 
-  border-left: none;
+  border: none;
 }
 /* ///footer */
 footer{
+  margin-top: 262px;
   width: 100vw; 
   margin-left: calc(-50vw + 50%); 
   background-color: var(--color-light-purple-bg);
