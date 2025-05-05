@@ -111,7 +111,7 @@ header {
   gap: 50px;
   list-style: none;
 }
-.nav__promo_list {
+.nav__promo_list>a {
   font-family: var(--font-inter-tight);
   font-size: var(--fs-20);
   font-style: normal;
@@ -121,7 +121,7 @@ header {
   cursor: pointer;
   opacity: 0.5;
 }
-.nav__promo_list:hover {
+.nav__promo_list>a:hover {
   opacity: 1;
 }
 .nav__promo_list {
