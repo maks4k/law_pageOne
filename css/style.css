@@ -709,6 +709,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 28px; /* Отступы между полями */
+  font-family: var(--font-inter-tight);
 }
 
 label {
