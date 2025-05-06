@@ -67,6 +67,14 @@
 
 /* //блок hero */
 @media screen and (max-width: 500px) {
+  .hero_heading{
+    font-size: 62px;
+    letter-spacing: 0.1rem;
+  }
+  .hero_heading_img{
+    width: 100px;
+    height: 70px;
+  }
   .cards-row {
     flex-direction: column;
     padding: 30px 0;
@@ -148,7 +156,8 @@
   
   .header_mission_values_center_containerOne,
   .header_mission_values_center_containerTwo {
-    width: 90%; /* Изменено на процент для адаптивности */
+    width: 100%; /* Изменено на процент для адаптивности */
+    padding: 20px;
     height: auto; /* Авто высота для гибкости */
   }
   
@@ -157,7 +166,8 @@
   }
   
   .our_values_promo_heading {
-    font-size: 32px; /* Уменьшено */
+    letter-spacing: 0.1rem;
+    font-size: 22px; /* Уменьшено */
   }
   
   .our_values_promo_text,
@@ -318,7 +328,15 @@ width: 250px;
 .histori_image_svg{
   display: none;
 }
-
+.mission_values_mainSvg{
+  display: none;
+}
+.our_values_mainSvg{
+  display: none;
+}
+.our_values_left_svg{
+  display: none;
+}
 
 /* //team */
 .team{
@@ -361,12 +379,16 @@ left: 140px;
 /* OPNION */
 .opnion{
   margin-top: -50px;
-
-  min-height: 1600px;
+  min-height: 1450px;
 
 }
 .opnion_heading{
-  font-size: 55px;
+  letter-spacing: 0.1rem;
+  font-size: 32px;
+}
+.opnion_heading_feature{
+  font-size: 32px;
+  letter-spacing: 0.1rem;
 }
 .opinions-grid{
   position: relative;
@@ -400,16 +422,19 @@ left: 0px;
 }
 /* our_parthner */
 .our_parthner{
-  min-height: 1000px;
-  margin-top: 50px;
+  min-height: 900px;
+  margin-top: -100px;
 }
 .our_parthner_heading{ 
-  font-size: 32px;
+  font-size: 52px;
   letter-spacing: 0.1em;
   text-align: center;
  }
  
-
+.our_parthner_heading_feature{
+  font-size: 42px;
+  letter-spacing: 0.1em;
+}
 .our_parthner_container{
   display: flex;
   flex-direction: column;
