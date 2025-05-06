@@ -1218,6 +1218,13 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   height: 1072px;
+  position: relative;
+}
+.cardOne-vesi{
+  position: absolute;
+  top: 678px;
+  left: 40px;
+  z-index: 123;  
 }
 .opnion_heading {
   margin-top: 210px;
@@ -1240,6 +1247,10 @@ header {
   letter-spacing: -5.5px;
 }
 
+
+
+
+
 .scroll-container {
   width: 100%;
   overflow-x: auto;
@@ -1248,7 +1259,6 @@ header {
 
 .cards-wrapper {
   position: relative;
-  height: 1200px;
   width: 1780px; /* фиксированная ширина для расположения карточек */
   margin: 0 auto;
 }
@@ -1318,6 +1328,7 @@ header {
   transform: translateY(-50%);
 }
 
+
 .cardThree {
   left: 890px;
   top: 44%;
@@ -1333,6 +1344,30 @@ header {
   top: -30px;
   left: -37px;
 }
+
+
+
+.cardTwo_eclipse{
+  position: absolute;
+  top: 257px;
+  left: 442px;
+  z-index: 123;
+}
+.cardThree_eclipse{
+  position: absolute;
+  top: 256px;
+  right: 442px;
+  z-index: 123;
+}
+.cardFour_eclipse{
+  position: absolute;
+  top: 535px;
+  right: 442px;
+  z-index: 123;
+}
+
+
+
 
 /* ///work-algoritmick */
 .work-algorithm {
@@ -1531,10 +1566,9 @@ header {
 .faq-grid {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: visible; /* чтобы карточки могли выходить за пределы контейнера */
-  width: 100vw; /* или шире, если надо */
+  overflow-x: visible; 
+  width: 100vw; 
   position: relative;
-  margin-left: calc(50vw - 960px);
 }
 .faq-grid-img {
   position: absolute;

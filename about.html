@@ -16,39 +16,49 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/responsiveCss/aboutResponsive.css">
-    <link rel="stylesheet" href="css/about.css" />
+   
   </head>
   <body>
     <div class="container">
       <header class="header">
+        <!-- чекбокс для управления состоянием бургер-меню -->
+        <input type="checkbox" id="menu-toggle" hidden />
+      
         <div class="header_logo">
           <img class="header_img" src="img/header/logo.png" alt="logo" />
           <a href="index.html"><h2 class="header__heading">Demo</h2></a>
         </div>
+      
+        <!-- бургер-ссылка на чекбокс -->
+        <label class="hamburger" for="menu-toggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/>
+            <path class="line" d="M7 16 27 16"/>
+          </svg>
+        </label>
+      
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__promo">
-              <li class="nav__promo_list"> <a href="international.html">services</a></li>
-              <li class="nav__promo_list active">  <a href="index.html">industries</a></li>
-            </li>
-            <li class="nav__info">
-              <li class="nav__promo_list"> <a href="about.html">about</a></li>
-              <li class="nav__promo_list"><a href="">contact</a></li>
-            </li>
+            <li class="nav__promo_list"><a href="international.html">services</a></li>
+            <li class="nav__promo_list active"><a href="index.html">industries</a></li>
+            <li class="nav__promo_list"><a href="about.html">about</a></li>
+            <li class="nav__promo_list"><a href="#">contact</a></li>
           </ul>
         </nav>
       </header>
       <section class="hero">
         <div class="hero__header">
           <h2 class="hero_heading">
-            Ab<img class src="img/about/hero/femida.png" alt="" />ut
+            Ab<img class="hero_heading_img" class src="img/about/hero/femida.png" alt="" />ut
           </h2>
         </div>
         <div class="cards-row">
           <div class="cards-grid left">
             <div class="card card_left_one">
-              <img src="img/about/hero/libbary.png" alt="" />
+              <img class="card_left_one-img" src="img/about/hero/libbary.png" alt="" />
             </div>
             <div class="card card_left_two">
               <p class="card_left_two_text">
@@ -147,7 +157,7 @@
             <svg class="our_values_promo_svgTwo" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
               <circle cx="2" cy="2" r="2" fill="white"/>
             </svg>
-            <p class="our_values_promo_text">Professionalism. We rely on in-depth legal knowledge and are constantly developing.
+            <p class="our_values_promo_text our_values_promo_textOne">Professionalism. We rely on in-depth legal knowledge and are constantly developing.
             </p>
           </div>
           <div class="our_values_text">
@@ -159,17 +169,17 @@
           <svg class="our_values_text_svgTwo" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
             <circle cx="3" cy="3" r="3" fill="white"/>
           </svg>
-          <p>Responsibility. We take full responsibility for every step of the legal support.
+          <p class="our_values-textMedia">Responsibility. We take full responsibility for every step of the legal support.
           </p>
           <svg class="our_values_text_svgThree" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
             <circle cx="3" cy="3" r="3" fill="white"/>
           </svg>
-          <p>Confidentiality. Client trust is the foundation of our work.
+          <p class="our_values-textMedia">Confidentiality. Client trust is the foundation of our work.
           </p>
           <svg class="our_values_text_svgFo" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
             <circle cx="3" cy="3" r="3" fill="white"/>
           </svg>
-          <p>Customer-oriented. We adapt solutions to the real goals and needs of the client, not to a template.</p>
+          <p class="our_values-textMedia">Customer-oriented. We adapt solutions to the real goals and needs of the client, not to a template.</p>
         </div>
       </div>
         <div class="our_values_ethos">
@@ -344,7 +354,8 @@
       <section class="our_parthner">
           <h2 class="our_parthner_heading"><span  class="our_parthner_heading_feature">Our</span> Partners</h2>
           <div class="our_parthner_container">
-            <div class="our_parthner_block"><svg xmlns="http://www.w3.org/2000/svg" width="82" height="35" viewBox="0 0 82 35" fill="none">
+            <div class="our_parthner_block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="82" height="35" viewBox="0 0 82 35" fill="none">
               <g clip-path="url(#clip0_38_1416)">
                 <path d="M34.9519 18.2883C34.9519 22.065 31.9345 24.848 28.2315 24.848C24.5284 24.848 21.511 22.065 21.511 18.2883C21.511 14.4849 24.5284 11.7285 28.2315 11.7285C31.9345 11.7285 34.9519 14.4849 34.9519 18.2883ZM32.01 18.2883C32.01 15.9282 30.2612 14.3134 28.2315 14.3134C26.2017 14.3134 24.4529 15.9282 24.4529 18.2883C24.4529 20.6247 26.2017 22.2632 28.2315 22.2632C30.2612 22.2632 32.01 20.6217 32.01 18.2883Z" fill="white"/>
                 <path d="M49.4502 18.2883C49.4502 22.065 46.4328 24.848 42.7298 24.848C39.0267 24.848 36.0093 22.065 36.0093 18.2883C36.0093 14.4879 39.0267 11.7285 42.7298 11.7285C46.4328 11.7285 49.4502 14.4849 49.4502 18.2883ZM46.5083 18.2883C46.5083 15.9282 44.7595 14.3134 42.7298 14.3134C40.7 14.3134 38.9512 15.9282 38.9512 18.2883C38.9512 20.6247 40.7 22.2632 42.7298 22.2632C44.7595 22.2632 46.5083 20.6217 46.5083 18.2883Z" fill="white"/>
