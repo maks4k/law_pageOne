@@ -65,6 +65,46 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* burger */
+.hamburger {
+  display: none;
+}
+.hamburger svg {
+  height: 3em;
+  width: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Линии бургер-меню */
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 0.3s ease, stroke-dashoffset 0.3s ease;
+}
+
+/* Линия сверху и снизу */
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+/* Когда чекбокс активирован */
+#menu-toggle:checked + .hamburger svg {
+  transform: rotate(45deg); /* Поворот на 45 градусов */
+}
+
+#menu-toggle:checked + .hamburger .line-top-bottom {
+  stroke-dasharray: 20 63; /* меняем, чтобы линия исчезала частично */
+  stroke-dashoffset: -32; /* сдвигаем */
+}
+
+#menu-toggle:checked + .hamburger .line:nth-of-type(2) {
+  opacity: 0; /* скрываем среднюю линию */
+}
+
 .header_logo {
   display: flex;
   align-items: center;
@@ -1215,6 +1255,7 @@ header {
 }
 /* option that matters */
 .opnion {
+ 
   padding-left: 20px;
   padding-right: 20px;
   height: 1072px;
@@ -1246,11 +1287,6 @@ header {
   line-height: normal;
   letter-spacing: -5.5px;
 }
-
-
-
-
-
 .scroll-container {
   width: 100%;
   overflow-x: auto;
@@ -1261,16 +1297,17 @@ header {
   position: relative;
   width: 1780px; /* фиксированная ширина для расположения карточек */
   margin: 0 auto;
+  height: 1200px;
 }
 
 .card {
   width: 445px;
   height: 538px;
+  position: absolute;
   background-color: var(--color-dark-bg);
   padding: 30px;
   box-sizing: border-box;
   border: 1px solid #98939f;
-  position: absolute;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1339,6 +1376,9 @@ header {
   left: 1335px;
   top: 0;
 }
+
+
+
 .cardTwo-svg {
   position: relative;
   top: -30px;
@@ -1371,14 +1411,20 @@ header {
 
 /* ///work-algoritmick */
 .work-algorithm {
-  background: #2d2540;
+  background: var(--color-dark-bg);
   color: #fff;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: "Montserrat", Arial, sans-serif;
+  height: 1200px;
 }
 
 .work-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.work-title-main {
+  display: block;
   color: #fff;
   font-family: var(--font-poppins);
   font-size: 110px;
@@ -1386,17 +1432,18 @@ header {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -5.5px;
-  text-align: center;
 }
 
-.work-title span {
+.work-title-sub {
+  display: block;
   color: #fff;
   font-family: var(--font-poppins);
-  font-size: 110px;
+  font-size: 80px; /* Можно подогнать под макет */
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  letter-spacing: -5.5px;
+  letter-spacing: -4px;
+  margin-top: -10px; /* Чуть прижать вверх, если нужно */
 }
 
 .work-images {
@@ -1446,8 +1493,7 @@ header {
 }
 .work-step--active {
   position: relative;
-  top: -20px;
-  left: 0px;
+  top: -20px; /* Поднимите блок выше остальных */
 }
 
 .circle {

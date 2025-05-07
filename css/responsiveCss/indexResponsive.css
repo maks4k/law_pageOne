@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    /* Бургер становится видимым только на мобильных устройствах */
+    .hamburger {
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      z-index: 1001;
+      cursor: pointer;
+    }
+  
+    /* Навигация и подложка */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+      display: flex; /* Меню появляется только на мобильных устройствах */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Список внутри меню */
+    .nav__list {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: var(--color-dark-purple-bg);
+      width: 80%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transform: translateX(-100%); /* Меню скрыто за пределами экрана */
+      transition: transform 0.3s ease;
+    }
+    .hamburger {
+      display: block;
+    }
+  
+    /* Когда меню активно */
+    #menu-toggle:checked ~ .nav {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    #menu-toggle:checked ~ .nav .nav__list {
+      transform: translateX(0); /* Перемещаем меню в экран */
+    }
+  
+    /* Скрытие списка меню на мобильных устройствах по умолчанию */
+    .nav__list li {
+      text-align: left;
+    }
+  }
+  

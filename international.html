@@ -17,24 +17,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/international.css" />
+    <link rel="stylesheet" href="css/responsiveCss/internationalResponsive.css">
   </head>
   <body>
     <div class="container">
       <header class="header">
+        <!-- чекбокс для управления состоянием бургер-меню -->
+        <input type="checkbox" id="menu-toggle" hidden />
+      
         <div class="header_logo">
           <img class="header_img" src="img/header/logo.png" alt="logo" />
-          <h2 class="header__heading">Demo</h2>
+          <a href="index.html"><h2 class="header__heading">Demo</h2></a>
         </div>
+      
+        <!-- бургер-ссылка на чекбокс -->
+        <label class="hamburger" for="menu-toggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/>
+            <path class="line" d="M7 16 27 16"/>
+          </svg>
+        </label>
+      
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__promo">
-              <li class="nav__promo_list">  <a href="international.html">services</a></li>
-              <li class="nav__promo_list active"><a href="index.html">industries</a></li>
-            </li>
-            <il class="nav__info">
-              <li class="nav__promo_list"><a href="about.html">about</a></li>
-              <li class="nav__promo_list"><a href="`">contact</a></li>
-            </il>
+            <li class="nav__promo_list"><a href="international.html">services</a></li>
+            <li class="nav__promo_list active"><a href="index.html">industries</a></li>
+            <li class="nav__promo_list"><a href="about.html">about</a></li>
+            <li class="nav__promo_list"><a href="#">contact</a></li>
           </ul>
         </nav>
       </header>
@@ -763,6 +772,56 @@
           </div>
         </div>
       </section>
+
+      <section class="work-algorithm">
+        <div class="work-title">
+          <span class="work-title-main">Work Algorithm</span>
+          <span class="work-title-sub">Procedure</span>
+        </div>
+        <div class="work-images">
+          <div class="work-imagesOne">
+            <img src="./img/international/workAlgorimthick/image1.png" alt="Step 1">
+          </div>
+          <div>
+            <img src="./img/international/workAlgorimthick/image2.png" alt="Main">
+          </div>
+          <div class="work-imagesThree">
+            <img src="./img/international/workAlgorimthick/image3.png" alt="Step 3">
+          </div>
+        </div>
+        <div class="work-timeline">
+          <div class="work-step work-step--active">
+            <div class="circle">1</div>
+            <h4>Initial Consultation</h4>
+            <p>We begin with a detailed discussion to understand your needs, goals, and the specifics of your legal issue.</p>
+          </div>
+          <div class="work-step">
+            <div class="circle">2</div>
+            <h4>Case Analysis</h4>
+            <p>Thorough analysis of your case to identify strengths, weaknesses, and opportunities.</p>
+          </div>
+          <div class="work-step">
+            <div class="circle">3</div>
+            <h4>Proposal / Agreement</h4>
+            <p>We present a clear proposal and formal agreement for our services.</p>
+          </div>
+          <div class="work-step">
+            <div class="circle">4</div>
+            <h4>Support</h4>
+            <p>Ongoing support and communication throughout the process.</p>
+          </div>
+          <div class="work-step">
+            <div class="circle">5</div>
+            <h4>Monitoring / Updates</h4>
+            <p>Regular updates and monitoring of your case progress.</p>
+          </div>
+          <div class="work-step">
+            <div class="circle">6</div>
+            <h4>Case Closure</h4>
+            <p>Finalization and closure of your case with a summary of outcomes.</p>
+          </div>
+        </div>
+      </section>
       <section class="faq-section">
           <div class="faq-header">
           <h2 class="faq-title">FAQ</h2>
@@ -813,6 +872,7 @@
             </div>
           </div>
       </section>
+
       <section class="form">
         <div class="form-wrapper">
           <form>
