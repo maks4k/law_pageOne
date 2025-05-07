@@ -580,7 +580,7 @@
   .benefits__list::before {
     left: 15px;
     top: 32px;
-    bottom: 32px;
+    bottom: 70px;
     width: 2px;
   }
 
@@ -640,6 +640,8 @@
     margin: 0 auto;
     
   }
+  
+  
 /* opnioin */
 
 
@@ -876,7 +878,7 @@
   left: 50%;
   top: 0;
   width: 2px;
-  height: 100%;
+  height: calc(100% - 64px); /* линия до середины последнего кружка */
   background: rgba(255,255,255,0.12);
   transform: translateX(-50%);
   z-index: 0;
