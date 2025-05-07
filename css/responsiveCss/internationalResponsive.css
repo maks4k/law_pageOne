@@ -878,7 +878,7 @@
   left: 50%;
   top: 0;
   width: 2px;
-  height: calc(100% - 64px); /* линия до середины последнего кружка */
+  height: calc(100% - 74px); /* линия до середины последнего кружка */
   background: rgba(255,255,255,0.12);
   transform: translateX(-50%);
   z-index: 0;
