@@ -1613,7 +1613,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: visible; 
-  width: 100vw; 
+  width: 90vw; 
   position: relative;
 }
 .faq-grid-img {
