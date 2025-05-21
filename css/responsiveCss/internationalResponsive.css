@@ -372,7 +372,7 @@
    
   }
   .info__specialist__footer-text{
-    width: 380px;
+    width: 320px;
   }
   .info__specialist-content-right{
     position: absolute;
@@ -477,10 +477,10 @@
     width: 100vw;
     left: 50%;
     margin-left: -50vw;
-    margin-right: -50vw;
+    margin-right: -40vw;
     padding: 20px 0;
     position: relative;
-    left: 202px;
+    left: 182px;
   
   }
   .include__footer_heading,
@@ -1165,6 +1165,10 @@ textarea {
 .footer-container {
   padding: 0 20px;
 }
+ .header {
+    position: relative;
+    overflow: visible;
+  }
 }
 
 
